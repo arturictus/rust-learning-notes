@@ -1,5 +1,6 @@
 #![allow(dead_code)]
+mod enums;
 mod generic_structs;
 fn main() {
-    generic_structs::main();
+    enums::main();
 }
