@@ -66,10 +66,10 @@ impl RoughTime {
     fn humanize(self) -> String {
         match self {
             RoughTime::InTheFuture(unit, 1) => {
-                format!("{} {} in the future", 1, unit.singular())
+                format!("{} {} from now", 1, unit.singular())
             }
             RoughTime::InTheFuture(unit, amount) => {
-                format!("{} {} in the future", amount, unit.plural())
+                format!("{} {} from now", amount, unit.plural())
             }
             RoughTime::JustNow => "Just Now".to_string(),
             RoughTime::InThePast(unit, 1) => {

@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 mod enums;
 mod generic_structs;
+mod pattern_matching;
 fn main() {
-    enums::main();
+    pattern_matching::main();
 }
