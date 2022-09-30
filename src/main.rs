@@ -2,6 +2,7 @@
 mod enums;
 mod generic_structs;
 mod pattern_matching;
+mod traits;
 fn main() {
-    pattern_matching::main();
+    traits::main();
 }
