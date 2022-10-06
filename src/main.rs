@@ -4,7 +4,7 @@ mod enums;
 mod generic_structs;
 mod pattern_matching;
 mod random_examples;
-mod traits;
+mod traits_11;
 fn main() {
-    traits::main();
+    traits_11::main();
 }
