@@ -2,13 +2,18 @@
 // https://www.geeksforgeeks.org/binary-search/
 // fn binary_search<T: Eq + PartialOrd + Add>(
 
-fn binary_search(col: &Vec<u32>, item: u32, low: u32, max: u32) -> Option<u32> {
+use std::ops::Add;
+
+fn binary_search<T: Eq + PartialOrd + Add + Clone>(
+    col: &Vec<T>,
+    item: T,
+    low: u32,
+    max: u32,
+) -> Option<T> {
     if max >= low {
         let mid = low + (max - low) / 2;
         let x = col[mid as usize].clone();
-        println!("current element: {}, current index: {}", x, mid);
         if x == item {
-            println!("found");
             return Some(item);
         }
         if x > item {
