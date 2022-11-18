@@ -7,6 +7,7 @@ mod random_examples;
 mod xi_traits;
 mod xii_operator_overloading;
 mod xiii_utility_traits;
+mod xiv_closures;
 fn main() {
     xi_traits::main();
 }
