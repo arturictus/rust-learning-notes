@@ -8,6 +8,7 @@ mod xi_traits;
 mod xii_operator_overloading;
 mod xiii_utility_traits;
 mod xiv_closures;
+mod xv_iterators;
 fn main() {
     xi_traits::main();
 }
