@@ -44,6 +44,7 @@ fn test_selector() {
     assert_eq!(s.elements, ['x', 'y', 'w']);
 }
 
+#[derive(Debug)]
 struct Appellation {
     name: String,
     nicknames: Vec<String>,
@@ -84,11 +85,12 @@ mod test {
             ],
         };
 
-        println!("before assignment");
+        println!("before assignment, `a` is: {:?}", a);
         a = Appellation {
             name: "Hera".to_string(),
             nicknames: vec![],
         };
-        println!("at end of block");
+
+        println!("at end of block a is {:?}", a);
     }
 }
